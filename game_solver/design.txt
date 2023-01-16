@@ -1,0 +1,61 @@
+General Game Solver:
+    Consruct game tree (load from JSON)
+        * Take JSON file as input ====> DONE
+        * Open/parse JSON data ====> DONE
+        * Convert to C objects
+            * Game tree
+                * Nodes
+                    * Decision
+                        * Player
+                        * Information state
+                        * Children
+                        * Action names
+                    * Nature
+                        * Children
+                    * Terminal
+                        * Utility vector
+            * Information state int to string lookup
+            * Information state strategies
+                * Cumulative Regret
+                * Cumulative Strategy
+                * Reach contribution
+                * Current strategy
+            * Procedure
+                * Receive a dict as input
+                * Define Conversion(Current Game Node = Initial dict, This Game):
+                    * Initialize this node (unknown type)
+                    * Iterate over each key-value pair in Current Game Node:
+                        * Check key name:
+                            * Player
+                                * This node type is decision
+                                * This node's player is this value
+                            * Info State
+                                * This node type is decision
+                                * Add this info state string to This Game's info state list
+                                * This node's info state is this info state's index in that list
+                            * Action Names
+                                * This node type is decision
+                                * This nodes action names are this list
+                            * Utility
+                                * This node type is terminal
+                                * This node's utility is this list
+                            * Children
+                                * If this node type is not resolved
+                                    * This node type is nature
+                                * Initialize this node's child list
+                                * For each dict in this list:
+                                    * Child Node is Conversion(dict)
+                                    * This node's child list includes Child Node
+        * Run CFR
+            * Create strategies
+                * Info state
+                * Reach contribution
+                * Cumulative regret
+                * Cumulative strategy
+                * Current strategy
+            * Play Dual Game
+            * Update Strategies
+        * Construct solution JSON
+        * Output solution JSON
+    Solve (CFR)
+    Output (JSON)
