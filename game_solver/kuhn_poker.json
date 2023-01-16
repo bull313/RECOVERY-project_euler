@@ -1,0 +1,424 @@
+{
+    "next": [
+        {
+            "player": 0,
+            "info_state": "Wake up with a Jack",
+            "action_names": [
+                "check",
+                "bet"
+            ],
+            "next": [
+                {
+                    "player": 1,
+                    "info_state": "Wake up with a Queen facing a check",
+                    "action_names": [
+                        "check",
+                        "bet"
+                    ],
+                    "next": [
+                        {
+                            "utility": [
+                                -1.0,
+                                1.0
+                            ]
+                        },
+                        {
+                            "player": 0,
+                            "info_state": "Holding a Jack facing a bet against your check",
+                            "action_names": [
+                                "fold",
+                                "call"
+                            ],
+                            "next": [
+                                {
+                                    "utility": [
+                                        -1.0,
+                                        1.0
+                                    ]
+                                },
+                                {
+                                    "utility": [
+                                        -2.0,
+                                        2.0
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "player": 1,
+                    "info_state": "Wake up with a Queen facing a bet",
+                    "action_names": [
+                        "fold",
+                        "call"
+                    ],
+                    "next": [
+                        {
+                            "utility": [
+                                1.0,
+                                -1.0
+                            ]
+                        },
+                        {
+                            "utility": [
+                                -2.0,
+                                2.0
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "player": 0,
+            "info_state": "Wake up with a Jack",
+            "action_names": [
+                "check",
+                "bet"
+            ],
+            "next": [
+                {
+                    "player": 1,
+                    "info_state": "Wake up with a King facing a check",
+                    "action_names": [
+                        "check",
+                        "bet"
+                    ],
+                    "next": [
+                        {
+                            "utility": [
+                                -1.0,
+                                1.0
+                            ]
+                        },
+                        {
+                            "player": 0,
+                            "info_state": "Holding a Jack facing a bet against your check",
+                            "action_names": [
+                                "fold",
+                                "call"
+                            ],
+                            "next": [
+                                {
+                                    "utility": [
+                                        -1.0,
+                                        1.0
+                                    ]
+                                },
+                                {
+                                    "utility": [
+                                        -2.0,
+                                        2.0
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "player": 1,
+                    "info_state": "Wake up with a King facing a bet",
+                    "action_names": [
+                        "fold",
+                        "call"
+                    ],
+                    "next": [
+                        {
+                            "utility": [
+                                1.0,
+                                -1.0
+                            ]
+                        },
+                        {
+                            "utility": [
+                                -2.0,
+                                2.0
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "player": 0,
+            "info_state": "Wake up with a Queen",
+            "action_names": [
+                "check",
+                "bet"
+            ],
+            "next": [
+                {
+                    "player": 1,
+                    "info_state": "Wake up with a Jack facing a check",
+                    "action_names": [
+                        "check",
+                        "bet"
+                    ],
+                    "next": [
+                        {
+                            "utility": [
+                                1.0,
+                                -1.0
+                            ]
+                        },
+                        {
+                            "player": 0,
+                            "info_state": "Holding a Queen facing a bet against your check",
+                            "action_names": [
+                                "fold",
+                                "call"
+                            ],
+                            "next": [
+                                {
+                                    "utility": [
+                                        -1.0,
+                                        1.0
+                                    ]
+                                },
+                                {
+                                    "utility": [
+                                        2.0,
+                                        -2.0
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "player": 1,
+                    "info_state": "Wake up with a Jack facing a bet",
+                    "action_names": [
+                        "fold",
+                        "call"
+                    ],
+                    "next": [
+                        {
+                            "utility": [
+                                1.0,
+                                -1.0
+                            ]
+                        },
+                        {
+                            "utility": [
+                                2.0,
+                                -2.0
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "player": 0,
+            "info_state": "Wake up with a Queen",
+            "action_names": [
+                "check",
+                "bet"
+            ],
+            "next": [
+                {
+                    "player": 1,
+                    "info_state": "Wake up with a King facing a check",
+                    "action_names": [
+                        "check",
+                        "bet"
+                    ],
+                    "next": [
+                        {
+                            "utility": [
+                                -1.0,
+                                1.0
+                            ]
+                        },
+                        {
+                            "player": 0,
+                            "info_state": "Holding a Queen facing a bet against your check",
+                            "action_names": [
+                                "fold",
+                                "call"
+                            ],
+                            "next": [
+                                {
+                                    "utility": [
+                                        -1.0,
+                                        1.0
+                                    ]
+                                },
+                                {
+                                    "utility": [
+                                        -2.0,
+                                        2.0
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "player": 1,
+                    "info_state": "Wake up with a King facing a bet",
+                    "action_names": [
+                        "fold",
+                        "call"
+                    ],
+                    "next": [
+                        {
+                            "utility": [
+                                1.0,
+                                -1.0
+                            ]
+                        },
+                        {
+                            "utility": [
+                                -2.0,
+                                2.0
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "player": 0,
+            "info_state": "Wake up with a King",
+            "action_names": [
+                "check",
+                "bet"
+            ],
+            "next": [
+                {
+                    "player": 1,
+                    "info_state": "Wake up with a Jack facing a check",
+                    "action_names": [
+                        "check",
+                        "bet"
+                    ],
+                    "next": [
+                        {
+                            "utility": [
+                                1.0,
+                                -1.0
+                            ]
+                        },
+                        {
+                            "player": 0,
+                            "info_state": "Holding a King facing a bet against your check",
+                            "action_names": [
+                                "fold",
+                                "call"
+                            ],
+                            "next": [
+                                {
+                                    "utility": [
+                                        -1.0,
+                                        1.0
+                                    ]
+                                },
+                                {
+                                    "utility": [
+                                        2.0,
+                                        -2.0
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "player": 1,
+                    "info_state": "Wake up with a Jack facing a bet",
+                    "action_names": [
+                        "fold",
+                        "call"
+                    ],
+                    "next": [
+                        {
+                            "utility": [
+                                1.0,
+                                -1.0
+                            ]
+                        },
+                        {
+                            "utility": [
+                                2.0,
+                                -2.0
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "player": 0,
+            "info_state": "Wake up with a King",
+            "action_names": [
+                "check",
+                "bet"
+            ],
+            "next": [
+                {
+                    "player": 1,
+                    "info_state": "Wake up with a Queen facing a check",
+                    "action_names": [
+                        "check",
+                        "bet"
+                    ],
+                    "next": [
+                        {
+                            "utility": [
+                                1.0,
+                                -1.0
+                            ]
+                        },
+                        {
+                            "player": 0,
+                            "info_state": "Holding a King facing a bet against your check",
+                            "action_names": [
+                                "fold",
+                                "call"
+                            ],
+                            "next": [
+                                {
+                                    "utility": [
+                                        -1.0,
+                                        1.0
+                                    ]
+                                },
+                                {
+                                    "utility": [
+                                        2.0,
+                                        -2.0
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "player": 1,
+                    "info_state": "Wake up with a Queen facing a bet",
+                    "action_names": [
+                        "fold",
+                        "call"
+                    ],
+                    "next": [
+                        {
+                            "utility": [
+                                1.0,
+                                -1.0
+                            ]
+                        },
+                        {
+                            "utility": [
+                                2.0,
+                                -2.0
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
