@@ -1,0 +1,520 @@
+{
+    "next": [
+        {
+            "player": 0,
+            "info_state": "J",
+            "action_names": [
+                "Check",
+                "Bet"
+            ],
+            "strategy": [
+                0.7515385104815946,
+                0.24846148951840538
+            ],
+            "next": [
+                {
+                    "player": 1,
+                    "info_state": "Q - Check",
+                    "action_names": [
+                        "Check",
+                        "Bet"
+                    ],
+                    "strategy": [
+                        0.9999899311958501,
+                        1.0068804149905928e-05
+                    ],
+                    "next": [
+                        {
+                            "utility": [
+                                0.0,
+                                2.0
+                            ]
+                        },
+                        {
+                            "player": 0,
+                            "info_state": "J - Check Bet",
+                            "action_names": [
+                                "Fold",
+                                "Call"
+                            ],
+                            "strategy": [
+                                0.999998540425002,
+                                1.4595749980199295e-06
+                            ],
+                            "next": [
+                                {
+                                    "utility": [
+                                        0.0,
+                                        2.0
+                                    ]
+                                },
+                                {
+                                    "utility": [
+                                        -1.0,
+                                        3.0
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "player": 1,
+                    "info_state": "Q - Bet",
+                    "action_names": [
+                        "Fold",
+                        "Call"
+                    ],
+                    "strategy": [
+                        0.6617644506740175,
+                        0.3382355493259825
+                    ],
+                    "next": [
+                        {
+                            "utility": [
+                                2.0,
+                                0.0
+                            ]
+                        },
+                        {
+                            "utility": [
+                                -1.0,
+                                3.0
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "player": 0,
+            "info_state": "J",
+            "action_names": [
+                "Check",
+                "Bet"
+            ],
+            "strategy": [
+                0.7515385104815946,
+                0.24846148951840538
+            ],
+            "next": [
+                {
+                    "player": 1,
+                    "info_state": "K - Check",
+                    "action_names": [
+                        "Check",
+                        "Bet"
+                    ],
+                    "strategy": [
+                        1.0969266309653612e-06,
+                        0.999998903073369
+                    ],
+                    "next": [
+                        {
+                            "utility": [
+                                0.0,
+                                2.0
+                            ]
+                        },
+                        {
+                            "player": 0,
+                            "info_state": "J - Check Bet",
+                            "action_names": [
+                                "Fold",
+                                "Call"
+                            ],
+                            "strategy": [
+                                0.999998540425002,
+                                1.4595749980199295e-06
+                            ],
+                            "next": [
+                                {
+                                    "utility": [
+                                        0.0,
+                                        2.0
+                                    ]
+                                },
+                                {
+                                    "utility": [
+                                        -1.0,
+                                        3.0
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "player": 1,
+                    "info_state": "K - Bet",
+                    "action_names": [
+                        "Fold",
+                        "Call"
+                    ],
+                    "strategy": [
+                        1.0969266309653612e-06,
+                        0.999998903073369
+                    ],
+                    "next": [
+                        {
+                            "utility": [
+                                2.0,
+                                0.0
+                            ]
+                        },
+                        {
+                            "utility": [
+                                -1.0,
+                                3.0
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "player": 0,
+            "info_state": "Q",
+            "action_names": [
+                "Check",
+                "Bet"
+            ],
+            "strategy": [
+                0.9999871462288958,
+                1.2853771104108765e-05
+            ],
+            "next": [
+                {
+                    "player": 1,
+                    "info_state": "J - Check",
+                    "action_names": [
+                        "Check",
+                        "Bet"
+                    ],
+                    "strategy": [
+                        0.6665421185282411,
+                        0.33345788147175887
+                    ],
+                    "next": [
+                        {
+                            "utility": [
+                                2.0,
+                                0.0
+                            ]
+                        },
+                        {
+                            "player": 0,
+                            "info_state": "Q - Check Bet",
+                            "action_names": [
+                                "Fold",
+                                "Call"
+                            ],
+                            "strategy": [
+                                0.4176684853935744,
+                                0.5823315146064256
+                            ],
+                            "next": [
+                                {
+                                    "utility": [
+                                        0.0,
+                                        2.0
+                                    ]
+                                },
+                                {
+                                    "utility": [
+                                        3.0,
+                                        -1.0
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "player": 1,
+                    "info_state": "J - Bet",
+                    "action_names": [
+                        "Fold",
+                        "Call"
+                    ],
+                    "strategy": [
+                        0.999998903073369,
+                        1.0969266309653612e-06
+                    ],
+                    "next": [
+                        {
+                            "utility": [
+                                2.0,
+                                0.0
+                            ]
+                        },
+                        {
+                            "utility": [
+                                3.0,
+                                -1.0
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "player": 0,
+            "info_state": "Q",
+            "action_names": [
+                "Check",
+                "Bet"
+            ],
+            "strategy": [
+                0.9999871462288958,
+                1.2853771104108765e-05
+            ],
+            "next": [
+                {
+                    "player": 1,
+                    "info_state": "K - Check",
+                    "action_names": [
+                        "Check",
+                        "Bet"
+                    ],
+                    "strategy": [
+                        1.0969266309653612e-06,
+                        0.999998903073369
+                    ],
+                    "next": [
+                        {
+                            "utility": [
+                                0.0,
+                                2.0
+                            ]
+                        },
+                        {
+                            "player": 0,
+                            "info_state": "Q - Check Bet",
+                            "action_names": [
+                                "Fold",
+                                "Call"
+                            ],
+                            "strategy": [
+                                0.4176684853935744,
+                                0.5823315146064256
+                            ],
+                            "next": [
+                                {
+                                    "utility": [
+                                        0.0,
+                                        2.0
+                                    ]
+                                },
+                                {
+                                    "utility": [
+                                        -1.0,
+                                        3.0
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "player": 1,
+                    "info_state": "K - Bet",
+                    "action_names": [
+                        "Fold",
+                        "Call"
+                    ],
+                    "strategy": [
+                        1.0969266309653612e-06,
+                        0.999998903073369
+                    ],
+                    "next": [
+                        {
+                            "utility": [
+                                2.0,
+                                0.0
+                            ]
+                        },
+                        {
+                            "utility": [
+                                -1.0,
+                                3.0
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "player": 0,
+            "info_state": "K",
+            "action_names": [
+                "Check",
+                "Bet"
+            ],
+            "strategy": [
+                0.2537433192862167,
+                0.7462566807137834
+            ],
+            "next": [
+                {
+                    "player": 1,
+                    "info_state": "J - Check",
+                    "action_names": [
+                        "Check",
+                        "Bet"
+                    ],
+                    "strategy": [
+                        0.6665421185282411,
+                        0.33345788147175887
+                    ],
+                    "next": [
+                        {
+                            "utility": [
+                                2.0,
+                                0.0
+                            ]
+                        },
+                        {
+                            "player": 0,
+                            "info_state": "K - Check Bet",
+                            "action_names": [
+                                "Fold",
+                                "Call"
+                            ],
+                            "strategy": [
+                                4.322937114665606e-06,
+                                0.9999956770628853
+                            ],
+                            "next": [
+                                {
+                                    "utility": [
+                                        0.0,
+                                        2.0
+                                    ]
+                                },
+                                {
+                                    "utility": [
+                                        3.0,
+                                        -1.0
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "player": 1,
+                    "info_state": "J - Bet",
+                    "action_names": [
+                        "Fold",
+                        "Call"
+                    ],
+                    "strategy": [
+                        0.999998903073369,
+                        1.0969266309653612e-06
+                    ],
+                    "next": [
+                        {
+                            "utility": [
+                                2.0,
+                                0.0
+                            ]
+                        },
+                        {
+                            "utility": [
+                                3.0,
+                                -1.0
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "player": 0,
+            "info_state": "K",
+            "action_names": [
+                "Check",
+                "Bet"
+            ],
+            "strategy": [
+                0.2537433192862167,
+                0.7462566807137834
+            ],
+            "next": [
+                {
+                    "player": 1,
+                    "info_state": "Q - Check",
+                    "action_names": [
+                        "Check",
+                        "Bet"
+                    ],
+                    "strategy": [
+                        0.9999899311958501,
+                        1.0068804149905928e-05
+                    ],
+                    "next": [
+                        {
+                            "utility": [
+                                2.0,
+                                0.0
+                            ]
+                        },
+                        {
+                            "player": 0,
+                            "info_state": "K - Check Bet",
+                            "action_names": [
+                                "Fold",
+                                "Call"
+                            ],
+                            "strategy": [
+                                4.322937114665606e-06,
+                                0.9999956770628853
+                            ],
+                            "next": [
+                                {
+                                    "utility": [
+                                        0.0,
+                                        2.0
+                                    ]
+                                },
+                                {
+                                    "utility": [
+                                        3.0,
+                                        -1.0
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "player": 1,
+                    "info_state": "Q - Bet",
+                    "action_names": [
+                        "Fold",
+                        "Call"
+                    ],
+                    "strategy": [
+                        0.6617644506740175,
+                        0.3382355493259825
+                    ],
+                    "next": [
+                        {
+                            "utility": [
+                                2.0,
+                                0.0
+                            ]
+                        },
+                        {
+                            "utility": [
+                                3.0,
+                                -1.0
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

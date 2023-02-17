@@ -1,0 +1,138 @@
+{
+    "0": {
+        "J": {
+            "action_names": [
+                "Check",
+                "Bet"
+            ],
+            "strategy": [
+                0.7515385104815946,
+                0.24846148951840538
+            ],
+            "random_selection": "Check"
+        },
+        "J - Check Bet": {
+            "action_names": [
+                "Fold",
+                "Call"
+            ],
+            "strategy": [
+                0.999998540425002,
+                1.4595749980199295e-06
+            ],
+            "random_selection": "Fold"
+        },
+        "Q": {
+            "action_names": [
+                "Check",
+                "Bet"
+            ],
+            "strategy": [
+                0.9999871462288958,
+                1.2853771104108765e-05
+            ],
+            "random_selection": "Check"
+        },
+        "Q - Check Bet": {
+            "action_names": [
+                "Fold",
+                "Call"
+            ],
+            "strategy": [
+                0.4176684853935744,
+                0.5823315146064256
+            ],
+            "random_selection": "Fold"
+        },
+        "K": {
+            "action_names": [
+                "Check",
+                "Bet"
+            ],
+            "strategy": [
+                0.2537433192862167,
+                0.7462566807137834
+            ],
+            "random_selection": "Bet"
+        },
+        "K - Check Bet": {
+            "action_names": [
+                "Fold",
+                "Call"
+            ],
+            "strategy": [
+                4.322937114665606e-06,
+                0.9999956770628853
+            ],
+            "random_selection": "Call"
+        }
+    },
+    "1": {
+        "Q - Check": {
+            "action_names": [
+                "Check",
+                "Bet"
+            ],
+            "strategy": [
+                0.9999899311958501,
+                1.0068804149905928e-05
+            ],
+            "random_selection": "Check"
+        },
+        "Q - Bet": {
+            "action_names": [
+                "Fold",
+                "Call"
+            ],
+            "strategy": [
+                0.6617644506740175,
+                0.3382355493259825
+            ],
+            "random_selection": "Fold"
+        },
+        "K - Check": {
+            "action_names": [
+                "Check",
+                "Bet"
+            ],
+            "strategy": [
+                1.0969266309653612e-06,
+                0.999998903073369
+            ],
+            "random_selection": "Bet"
+        },
+        "K - Bet": {
+            "action_names": [
+                "Fold",
+                "Call"
+            ],
+            "strategy": [
+                1.0969266309653612e-06,
+                0.999998903073369
+            ],
+            "random_selection": "Call"
+        },
+        "J - Check": {
+            "action_names": [
+                "Check",
+                "Bet"
+            ],
+            "strategy": [
+                0.6665421185282411,
+                0.33345788147175887
+            ],
+            "random_selection": "Check"
+        },
+        "J - Bet": {
+            "action_names": [
+                "Fold",
+                "Call"
+            ],
+            "strategy": [
+                0.999998903073369,
+                1.0969266309653612e-06
+            ],
+            "random_selection": "Fold"
+        }
+    }
+}
