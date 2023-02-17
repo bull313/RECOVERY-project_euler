@@ -3,12 +3,13 @@ from itertools import permutations
 from json import dumps
 from sys import argv
 
+card_values = [ str(i) for i in range(2, 10) ] + [ "T", "J", "Q", "K", "A" ]
 num_players = 2
 pot_size = 2
 constant_sum = 2
-cards = [ "J", "Q", "K", "A" ]
+game_cards = [ "JC", "JD", "JH", "JS", "QC", "QD", "QH", "QS", "KC", "KD", "KH", "KS" ]
 
-subgame_template = {
+kuhn_template = {
     "player": 0,
     "info_state": "%s",
     "action_names": [ "Check", "Bet" ],
@@ -42,15 +43,72 @@ subgame_template = {
     ]
 }
 
+raise_kuhn_template = {
+    "player": 0,
+    "info_state": "%s",
+    "action_names": [ "Check", "Bet" ],
+    "next": [
+        {
+            "player": 1,
+            "info_state": "%s - Check",
+            "action_names": [ "Check", "Bet" ],
+            "next": [
+                { pot_size },
+                {
+                    "player": 0,
+                    "info_state": "%s - Check Bet",
+                    "action_names": [ "Fold", "Call", "Raise" ],
+                    "next": [
+                        [ 0, pot_size ],
+                        { pot_size + 1 },
+                        {
+                            "player": 1,
+                            "info_state": "%s - Check Bet Raise",
+                            "action_names": [ "Fold", "Call" ],
+                            "next": [
+                                [ 3, -1 ],
+                                { pot_size + 2 }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "player": 1,
+            "info_state": "%s - Bet",
+            "action_names": [ "Fold", "Call", "Raise" ],
+            "next": [
+                [ pot_size, 0 ],
+                { pot_size + 1 },
+                {
+                    "player": 0,
+                    "info_state": "%s - Bet Raise",
+                    "action_names": [ "Fold", "Call" ],
+                    "next": [
+                        [ -1, 3 ],
+                        { pot_size + 2 }
+                    ]
+                }
+            ]
+        }
+    ]
+}
+
+subgame_template = raise_kuhn_template
+
 def valuate_card(card):
-    return { cards[i]: i for i in range(len(cards)) }[card]
+    return { card_values[i]: i for i in range(len(card_values)) }[card[0]]
 
 def showdown(card1, card2, profit):
+    split = int(constant_sum / 2)
     loss = constant_sum - profit
     value1 = valuate_card(card1)
     value2 = valuate_card(card2)
     
-    return profit if value1 > value2 else loss
+    return profit if value1 > value2 \
+        else split if value1 == value2 \
+        else loss
 
 def is_util(node):
     return type(node) is set
@@ -86,7 +144,12 @@ def gen_subgame(card_pair, template):
 
     return template
 
-def generate_game(template):
+def generate_game(template, cards=None):
+    global game_cards
+
+    if cards is None:
+        cards = game_cards
+
     subgame_list = list()
     deals = permutations(cards, num_players)
     

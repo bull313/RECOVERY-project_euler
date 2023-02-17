@@ -5,17 +5,19 @@ import gamecreator as GC
 class TestHandEvaluation(TestCase):
     
     def test_card_name_converted_to_card_value(self):
-        value = GC.valuate_card(GC.cards[0])
+        value1 = GC.valuate_card("5")
+        value2 = GC.valuate_card("K")
+        value3 = GC.valuate_card("TH")
+        value4 = GC.valuate_card("TD")
         
-        self.assertEqual(0, value)
-        
-        value = GC.valuate_card(GC.cards[-1])
-        
-        self.assertEqual(len(GC.cards) - 1, value)
+        self.assertEqual(3, value1)
+        self.assertEqual(11, value2)
+        self.assertEqual(8, value3)
+        self.assertEqual(value3, value4)
     
-    def test_card_name_conversion_to_index(self):
-        low = GC.cards[0]
-        high = GC.cards[-1]
+    def test_showdown_pays_off_correctly_on_winner(self):
+        low = "J"
+        high = "K"
         
         evaluation = GC.showdown(low, high, 4)
         
@@ -24,6 +26,15 @@ class TestHandEvaluation(TestCase):
         evaluation = GC.showdown(high, low, 4)
         
         self.assertEqual(4, evaluation)
+
+    def test_showdown_can_split_on_tie(self):
+        value1 = "JH"
+        value2 = "JD"
+
+        evaluation = GC.showdown(value1, value2, 4)
+        split_pot = int(GC.constant_sum / 2)
+
+        self.assertEqual(split_pot, evaluation)
 
 class TestCardTemplating(TestCase):
     
@@ -229,7 +240,7 @@ class TestCardTemplating(TestCase):
             ]
         }
         
-        game = GC.generate_game(game_template)
+        game = GC.generate_game(game_template, cards=[ "J", "Q", "K" ])
         
         expected_subgame = {
             "player": 0,
